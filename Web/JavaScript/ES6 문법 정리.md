@@ -1,5 +1,3 @@
-![](https://velog.velcdn.com/images/seola1ne/post/3a213c5a-6d14-4f43-9ccc-673178bb3319/image.png)
-
 ## ⚡ ES6란 무엇일까?
 
 - ES란 ECMAScript의 약자로, 자바스크립트의 표준, 규격을 나타내는 용어이다.
