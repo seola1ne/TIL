@@ -41,9 +41,11 @@ function App() {
 
 이렇게 사용해야 하는 이유는 Virtual DOM에서 컴포넌트 변화를 감지할 때 효율적으로 비교할 수 있도록 컴포넌트 내부는 하나의 DOM 트리 구조로 이루어져야 한다는 규칙이 있기 때문이다.
 
+<br>
+
 ### 자바스크립트 표현식
 > JSX 안에서도 자바스크립트 표현식을 사용할 수 있다.
-자바스크립트 표현식을 작성하려면 JSX 내부에서 코드를 {}로 감싸주면 된다.
+자바스크립트 표현식을 작성하려면 JSX 내부에서 코드를 `{}`로 감싸주면 된다.
 
 ```javascript
 function App() {
@@ -58,19 +60,22 @@ function App() {
 }
 ```
 
+<br>
+
 ### if문(for문) 대신 삼항 연산자 사용
 > if문과 for문은 Javascript 표현식이 아니기 때문에 JSX 내부 자바스크립트 표현식에서는 사용할 수 없다.
-때문에 조건부에 따라 다른 렌더링 시 주변 코드에서 if문을 사용하거나, {} 안에서 삼항 연산자를 사용한다.
+>
+때문에 조건부에 따라 다른 렌더링 시 주변 코드에서 if문을 사용하거나, `{}` 안에서 삼항 연산자를 사용한다.
 
-방법 1, 외부에서 사용
+#### if문을 외부에서 사용하기
 ```javascript
 function App() {
   let desc = '';
-  const loginYn = 'Y';
-  if (loginYn = 'Y') {
-    desc = <div>회원입니다.</div>;
+  const isWeekend = 'Y';
+  if (isWeekend = 'Y') {
+    desc = <div>오늘은 주말입니다!</div>;
   } else {
-    desc = <div>비회원입니다.</div>;
+    desc = <div>오늘은 평일입니다!</div>;
   }
   
   return (
@@ -81,17 +86,17 @@ function App() {
 }
 ```
 
-방법 2, 내부에서 사용
+#### 삼항 연산자를 내부에서 사용하기
 ```javascript
 function App() {
-  const loginYn = 'Y';
+  const isWeekend = 'Y';
   return (
     <>
     	<div>
-          {login === 'Y' ? (
-           	  <div>회원입니다.</div>
+          {isWeekend === 'Y' ? (
+           	  <div>오늘은 주말입니다!</div>
            ) : (
-              <div>비회원입니다.</div>
+              <div>오늘은 평일입니다!</div>
           )}
 		</div>
 	</>
@@ -99,33 +104,33 @@ function App() {
 }
 ```
 
-방법 3, AND연산자 사용
+#### AND연산자 사용하기
 ```javascript
 function App() {
-  const loginYn = 'Y';
+  const isWeekend = 'Y';
   return (
     	<>
           <div>
-              {loginYn === 'Y' && <div>회원입니다.</div>}
-               // 조건이 만족하지 않을 경우 아무것도 노출되지 않는다.
+              {isWeekend === 'Y' && <div>오늘은 주말입니다!</div>}
+               // 조건이 만족하지 않을 경우 아무것도 노출되지 않음
           </div>
      	</>
      );
 }
 ```
 
-방법 4, 즉시실행함수 사용
+#### 즉시실행함수를 사용하기
 ```javascript
 function App() {
-	const loginYn = 'Y';
+	const isWeekend = 'Y';
   	return (
       <>
         {
           (() => {
-              if (loginYn === "Y") {
-                return (<div>회원입니다.</div>);
+              if (isWeekend === "Y") {
+                return (<div>오늘은 주말입니다!</div>);
               } else {
-                  return (<div>비회원입니다.</div>);
+                  return (<div>오늘은 평일입니다!</div>);
               }
           })()
         }
@@ -133,15 +138,17 @@ function App() {
 }
 ```
 
+<br>
 
 ### camelCase 명명 규칙 사용
 1) JSX 스타일링
 > JSX에서 자바스크립트 문법을 쓰려면 `{}`를 써야 하기 때문에, 스타일을 적용할 때도 객체 형태로 넣어 주어야 한다.
 카멜 표기법으로 작성해야 한다. (font-size => fontSize)
+
 ```javascript
 function App() {
   const style = {
-    backgroundColor: 'green',
+    backgroundColor: 'tomato',
     fontSize: '12px'
   }
   return (
@@ -152,7 +159,8 @@ function App() {
 
 2) class 대신 className
 > - 일반 HTML에서 CSS 클래스를 사용할 때는 class 라는 속성을 사용한다.
-> - JSX에서는 class가 아닌 className을 사용한다.
+> - JSX에서는 class가 아닌 `className`을 사용한다.
+
 ```javascript
 function App() {
   const style = {
@@ -165,9 +173,11 @@ function App() {
 }
 ```
 
+<br>
 
 ### JSX 내에서 주석 사용 방법
-> JSX 내에서 `{/*...*/}`와 같은 형식을 사용한다.
+JSX 내에서 `{/*...*/}`와 같은 형식을 사용한다.
+
 ```javascript
 function App() {
  	return (
@@ -182,4 +192,4 @@ function App() {
 
 <hr>
 
-> 출처 : [ https://goddaehee.tistory.com/296 ]
+> 출처 : https://goddaehee.tistory.com/296
