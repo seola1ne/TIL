@@ -1,8 +1,6 @@
 ## Today I Learned 😺
 배운 것을 기록합니다!
 
-<hr>
-
 - [Web Programming](https://github.com/seola1ne/TIL/tree/main/Web)
 
 - [Java](https://github.com/seola1ne/TIL/tree/main/Java)
