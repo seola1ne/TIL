@@ -3,14 +3,14 @@
 
 <hr>
 
-- [Web Programming] (https://github.com/seola1ne/TIL/tree/main/Web)
+- [Web Programming](https://github.com/seola1ne/TIL/tree/main/Web)
 
-- [Java] (https://github.com/seola1ne/TIL/tree/main/Java)
+- [Java](https://github.com/seola1ne/TIL/tree/main/Java)
 
-- [C++] (https://github.com/seola1ne/TIL/tree/main/Cplusplus)
+- [C++](https://github.com/seola1ne/TIL/tree/main/Cplusplus)
 
-- [Database] (https://github.com/seola1ne/TIL/tree/main/Database)
+- [Database](https://github.com/seola1ne/TIL/tree/main/Database)
 
-- [풀었던 문제 모음] (https://github.com/seola1ne/TIL/tree/main/solved_problem)
+- [풀었던 문제 모음](https://github.com/seola1ne/TIL/tree/main/solved_problem)
 
-- [알고리즘] (https://github.com/seola1ne/TIL/tree/main/Algorithm)
+- [알고리즘](https://github.com/seola1ne/TIL/tree/main/Algorithm)
