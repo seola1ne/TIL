@@ -21,7 +21,8 @@ localStorage.removeItem(key) // 특정 key와 해당하는 값을 제거함
 ```
 
 >**Object/Array 데이터를 저장**하는 메소드
->```javascript
+>
+```javascript
 localStorage.setItem(key, JSON.stringify(value));
 //localStorage.setItem('student', JSON.stringify({name: 'kim'}))
 ```
