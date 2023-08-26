@@ -105,7 +105,31 @@ s.update([5, 7]) # {1, 2, 3, 4, 5, 7}
 s.remove(7) # {1, 2, 3, 4, 5}
 ```
 
+<br />
 
+## 자주 쓰이는 내장 함수
+### str
+**lower와 upper**
+`lower`는 문자열을 **소문자**로, `upper`는 문자열을 **대문자**로 바꾸어 반환한다.
+원본 문자열은 변경되지 않음!
+```python
+s = 'HaPPy'
+print(s.lower()) # happy
+print(s.upper()) # HAPPY
+```
+
+**find**
+해당 글자가 위치한 인덱스를 찾는다.
+여러 개일 경우 가장 앞쪽 인덱스를 반환한다. 
+```python
+print(s.find("P") # 2
+```
+
+**count**
+해당 글자가 문자열 내에 포함된 개수를 반환한다. 
+```python
+print(s.count("P")) # 2
+```
 
 <hr />
 
