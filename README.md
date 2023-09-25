@@ -1,7 +1,11 @@
 ## Today I Learned 😺
 배운 것을 기록합니다!
 
-- [알고리즘](https://github.com/seola1ne/TIL/tree/main/Algorithm)
+- [Algorithm](https://github.com/seola1ne/TIL/tree/main/Algorithm)
+
+- [BigData](https://github.com/seola1ne/TIL/tree/main/BigData)
+
+- [CS](https://github.com/seola1ne/TIL/tree/main/CS)
 
 - [C++](https://github.com/seola1ne/TIL/tree/main/Cplusplus)
 
@@ -9,8 +13,10 @@
 
 - [Java](https://github.com/seola1ne/TIL/tree/main/Java)
 
-- [Web Programming](https://github.com/seola1ne/TIL/tree/main/Web)
+- [OS](https://github.com/seola1ne/TIL/tree/main/OS)
 
-- [풀었던 문제 모음](https://github.com/seola1ne/TIL/tree/main/solved_problem)
+- [Web](https://github.com/seola1ne/TIL/tree/main/Web)
+
+- [Solved Problem](https://github.com/seola1ne/TIL/tree/main/solved_problem)
 
 
